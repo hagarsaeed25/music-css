@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+
+  }
+
+  header{
+    height: 100vh;
+    background-image: url(images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+  header::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+  }
+  .logo img{
+    width:55%;
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  span{
+    color: rgba(0, 255, 255, 0.363);
+  }
+  ul li a:hover{
+    color: rgba(0, 255, 255, 0.363);
+  }
+  .content{
+    text-align: center;
+    margin-top: 10%;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  .content h4{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 15px;
+  }
+  .content h1{
+    font-size:70px;
+    margin-top: 20px;
+
+  }
+  .content p{
+    width:40%;
+    margin: 30px auto;
+    font-size: 17px;
+    line-height:2;
+    font-weight: 600;
+  }
+
+.btn1{
+    height:40px;
+    width: 10%;
+    border-radius: 5px solid #fff;
+  }
+  .btn1:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+.about{
+    display: flex;
+    padding-top:10%;
+    margin-left:30px;
+    height: 60vh;
+}
+.about div h2 {
+padding-left: 20px;
+padding-bottom: 10px;
+font-size: 17px;
+margin: 0 0 11px;
+color: #303030;
+
+}
+
+.about div p{
+    font-size:15px;
+    color: #888888;
+    width:80%;
+}
